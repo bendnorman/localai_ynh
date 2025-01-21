@@ -18,14 +18,14 @@ Il NE doit PAS être modifié à la main.
 
 ## Vue d’ensemble
 
-Ceci est une fausse description des fonctionalités de l'app
+LocalAI is the free, Open Source OpenAI alternative. LocalAI act as a drop-in replacement REST API that’s compatible with OpenAI (Elevenlabs, Anthropic... ) API specifications for local AI inferencing. It allows you to run LLMs, generate images, audio (and not only) locally or on-prem with consumer grade hardware, supporting multiple model families. Does not require GPU.
 
 
 **Version incluse :** 2.25.0~ynh1
 
 ## Captures d’écran
 
-![Capture d’écran de LocalAI](./doc/screenshots/example.jpg)
+![Capture d’écran de LocalAI](./doc/screenshots/331878853-20b5ccd2-8393-44f0-aaf6-87a23806381e.png)
 
 ## Documentations et ressources
 
