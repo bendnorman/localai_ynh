@@ -31,9 +31,6 @@ ynh_script_progression "Updating $app's configuration files..."
 
 ynh_config_add --template="localai.env" --destination="$install_dir/localai.env"
 
-chmod 400 "$install_dir/localai.env"
-chown "$app:$app" "$install_dir/localai.env"
-
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
