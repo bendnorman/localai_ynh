@@ -1,5 +1,5 @@
 [Unit]
-Description=LocalAI Service
+Description=LocalAI: OpenAI alternative
 After=network-online.target
 
 [Service]
