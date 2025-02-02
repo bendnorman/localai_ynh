@@ -25,9 +25,8 @@ ynh_script_progression "Ensuring downward compatibility..."
 ynh_script_progression "Upgrading source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
-ynh_setup_source --dest_dir="$install_dir" --full_replace
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="localai.env"
 
-chown -R "$app:$app" "$install_dir"
 chmod +x $install_dir/local-ai
 
 #=================================================
@@ -37,9 +36,6 @@ ynh_script_progression "Updating $app's configuration files..."
 
 ynh_config_add --template="localai.env" --destination="$install_dir/localai.env"
 
-chmod 400 "$install_dir/localai.env"
-chown "$app:$app" "$install_dir/localai.env"
-
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
@@ -48,7 +44,7 @@ ynh_script_progression "Upgrading system configurations related to $app..."
 ynh_config_add_nginx
 
 ynh_config_add_systemd
-yunohost service add "$app" --description="LocalAI" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="OpenAI alternative" --log="/var/log/$app/$app.log"
 
 ynh_config_add_logrotate
 

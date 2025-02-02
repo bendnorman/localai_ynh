@@ -4,15 +4,15 @@ packaging_format = 2
 
 id = "localai"
 name = "LocalAI"
-description.en = " the free, Open Source OpenAI alternative"
+description.en = "Free, Open Source OpenAI alternative"
+description.fr = "Alternative gratuite et open source à l'OpenAI"
 
-version = "2.25.0~ynh1"
+version = "2.25.0~ynh2"
 
-maintainers = ["johndoe"]
+maintainers = []
 
 [upstream]
-# NB: Only the "license" key is mandatory. Remove entries for which there's no relevant data
-license = "MIT" # you can see the available licenses identifiers list here: https://spdx.org/licenses/
+license = "MIT"
 website = "https://localai.io/"
 code = "https://github.com/mudler/LocalAI"
 
@@ -53,19 +53,12 @@ ram.runtime = "50M"
     autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
-    # This will provision/deprovision a unix system user
 
     [resources.install_dir]
-    # This will create/remove the install dir as /var/www/$app
-    # and store the corresponding setting $install_dir
 
     [resources.data_dir]
-    # This will create/remove the data dir as /home/yunohost.app/$app
-    # and store the corresponding setting $data_dir
 
     [resources.permissions]
-    # This will configure SSOwat permission for $domain/$path/
-    # The initial allowed group of user is configured via the init_main_permission question (public=visitors, private=all_users)
     main.url = "/"
     api.url = "/api"
     api.allowed = "visitors"
@@ -74,9 +67,6 @@ ram.runtime = "50M"
     api.protected = true
 
     [resources.ports]
-    # This will pick a random port for reverse-proxying and store it as the $port setting
 
     [resources.apt]
-    # This will automatically install/uninstall the following apt packages
-    # and implicitly define the $phpversion setting as 8.0 (if phpX.Y-foobar dependencies are listed)
     packages = "curl, awk, grep, sed"

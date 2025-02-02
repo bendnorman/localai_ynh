@@ -19,7 +19,6 @@ ynh_script_progression "Setting up source files..."
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
 
-chown -R "$app:$app" "$install_dir"
 chmod +x $install_dir/local-ai
 
 #=================================================
@@ -28,9 +27,6 @@ chmod +x $install_dir/local-ai
 ynh_script_progression "Adding $app's configuration files..."
 
 ynh_config_add --template="localai.env" --destination="$install_dir/localai.env"
-
-chmod 400 "$install_dir/localai.env"
-chown "$app:$app" "$install_dir/localai.env"
 
 #=================================================
 # SYSTEM CONFIGURATION
@@ -42,7 +38,7 @@ ynh_config_add_nginx
 
 # Create a dedicated systemd config
 ynh_config_add_systemd
-yunohost service add "$app" --description="LocalAI" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="OpenAI alternative" --log="/var/log/$app/$app.log"
 
 # Use logrotate to manage application logfile(s)
 ynh_config_add_logrotate
