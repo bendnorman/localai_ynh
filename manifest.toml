@@ -50,7 +50,10 @@ ram.runtime = "50M"
     amd64.sha256 = "f6421f701991f1ccbeb136e22b5664f9d2fbdda066b83f9747c8edd49a8825ce"
     arm64.url = "https://github.com/mudler/LocalAI/releases/download/v2.25.0/local-ai-Linux-arm64"
     arm64.sha256 = "b9a13e6ee33bd3102a3465333d952cae1eed09b2280861eca7ed172064f8b7b1"
+
     autoupdate.strategy = "latest_github_release"
+    autoupdate.asset.amd64 = ".*-Linux-x86_64"
+    autoupdate.asset.arm64 = ".*-Linux-arm64"
 
     [resources.system_user]
 
