@@ -4,14 +4,14 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/master/logos/localai.png" width="32px" alt="Logo of LocalAI">
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/localai.png" width="32px" alt="Logo of LocalAI">
   LocalAI, packaged for YunoHost
 </h1>
 
 Free, Open Source OpenAI alternative
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://localai.io/)
-![Version: 2.25.0~ynh2](https://img.shields.io/badge/Version-2.25.0~ynh2-rgba(0,150,0,1)?style=for-the-badge)
+[![Version: 2.28.0~ynh1](https://img.shields.io/badge/Version-2.28.0~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/localai/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/localai"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
