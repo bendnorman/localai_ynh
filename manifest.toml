@@ -7,7 +7,7 @@ name = "LocalAI"
 description.en = "Free, Open Source OpenAI alternative"
 description.fr = "Alternative gratuite et open source à l'OpenAI"
 
-version = "2.25.0~ynh2"
+version = "2.28.0~ynh1"
 
 maintainers = []
 
@@ -46,11 +46,14 @@ ram.runtime = "50M"
     prefetch = false
     extract = false
     rename = "local-ai"
-    amd64.url = "https://github.com/mudler/LocalAI/releases/download/v2.25.0/local-ai-Linux-x86_64"
-    amd64.sha256 = "f6421f701991f1ccbeb136e22b5664f9d2fbdda066b83f9747c8edd49a8825ce"
-    arm64.url = "https://github.com/mudler/LocalAI/releases/download/v2.25.0/local-ai-Linux-arm64"
-    arm64.sha256 = "b9a13e6ee33bd3102a3465333d952cae1eed09b2280861eca7ed172064f8b7b1"
+    amd64.url = "https://github.com/mudler/LocalAI/releases/download/v2.28.0/local-ai-Linux-x86_64"
+    amd64.sha256 = "623e7c201ee1246f8bd157d7dec8e61646bfdd572b0898956e85c28b9f615878"
+    arm64.url = "https://github.com/mudler/LocalAI/releases/download/v2.28.0/local-ai-Linux-arm64"
+    arm64.sha256 = "4c0bef97654d5cef0056aa3e02c6c4643df31136a653f33f9af4360b890bc26a"
+
     autoupdate.strategy = "latest_github_release"
+    autoupdate.asset.amd64 = ".*-Linux-x86_64$"
+    autoupdate.asset.arm64 = ".*-Linux-arm64$"
 
     [resources.system_user]
 
