@@ -17,13 +17,12 @@ website = "https://localai.io/"
 code = "https://github.com/mudler/LocalAI"
 
 [integration]
-yunohost = ">= 12.0.0"
+yunohost = ">= 12.0.9"
 helpers_version = "2.1"
 architectures = ["amd64"]
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "3G"
